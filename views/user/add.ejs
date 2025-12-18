@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Customer</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+  <h2>Add New Customer</h2>
+  <form action="/add" method="POST">
+    <div class="mb-3">
+      <label for="fullName" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="fullName" name="fullName" required>
+    </div>
+    <div class="mb-3">
+      <label for="gender" class="form-label">Gender</label>
+      <select class="form-select" id="gender" name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="country" class="form-label">Country</label>
+      <input type="text" class="form-control" id="country" name="country" required>
+    </div>
+    <button type="submit" class="btn btn-success">Add Customer</button>
+    <a href="/" class="btn btn-secondary">Back</a>
+  </form>
+</div>
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
